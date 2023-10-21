@@ -1,35 +1,23 @@
-			API			
-	Base URL	http://127.0.0.1:8000/api/				
-	Auth	Token Based				
-	Token Provider	Login API				
-	Token Package Name	Sanctum				
-						
-						
-						
-Profile	URL	Method	IS_Auth ?	Parameters	Retrun	
-vendor	/register	POST	No	name, email, password, c_password		
-	/login	POST	YES	email, password		
-	/logout	POST	YES			
-						
-Product Add by vendor	/add	POST	YES	name, qty, color, size	Json, success, data, message, status	
-	/delete/{id}	DELETE	YES	id		
-	/update/{id}	POST	YES	id		
-	/all_product	GET	YES			
-						
-						
-User	/user_register	POST	No	name, email, password, c_password		
-	/user_login	POST	YES	email, password		
-	/user_logout	POST	Yes			
-						
-						
-Product add to cart by User	/add_to_cart	POST	YES	qty, product_id, user_id	Json, success, data, message, status	
-	/delete_from_cart/{id}	POST	YES	id		
-	/cart_product_update/{id}	POST	YES	id		
-	/view_all_cartData	GET	YES			
-						
-						
-						
-						
-						
-						
-						
+Simple Download the api_shop.zip file and api doc 
+Now, extract the zip folder 
+then run the project by using
+1. VS code / any editors
+2. XAMPP
+3. POST MAN
+
+   Before run the project migrate the database after connection to database in .env file
+   DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=apishop
+DB_USERNAME=root
+DB_PASSWORD=
+
+Then, run on cmd prompt php artisan serve
+after run the project
+open POSTMAN application and api doc file
+
+
+Thank you
+kundan
+   
